@@ -104,7 +104,7 @@ const Student = () => {
           </h1>
           <button
             onClick={() => setShowForm(true)}
-            className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg shadow transition w-full sm:w-auto"
+            className="bg-blue-600 hover:cursor-pointer hover:bg-blue-700 text-white px-4 py-2 rounded-lg shadow transition w-full sm:w-auto"
           >
             + Add Student
           </button>
@@ -173,13 +173,13 @@ const Student = () => {
                         <>
                           <button
                             onClick={() => handleUpdateSubmit(student._id)}
-                            className="bg-green-600 text-white px-3 py-1 rounded hover:bg-green-700"
+                            className="bg-green-600 hover:cursor-pointer text-white px-3 py-1 rounded hover:bg-green-700"
                           >
                             Update
                           </button>
                           <button
                             onClick={handleCancelEdit}
-                            className="bg-gray-400 text-white px-3 py-1 rounded hover:bg-gray-500"
+                            className="bg-gray-400 hover:cursor-pointer text-white px-3 py-1 rounded hover:bg-gray-500"
                           >
                             Cancel
                           </button>
@@ -188,13 +188,13 @@ const Student = () => {
                         <>
                           <button
                             onClick={() => handleEditClick(student)}
-                            className="bg-yellow-500 text-white px-3 py-1 rounded hover:bg-yellow-600"
+                            className="bg-yellow-500 hover:cursor-pointer text-white px-3 py-1 rounded hover:bg-yellow-600"
                           >
                             Edit
                           </button>
                           <button
                             onClick={() => handleDelete(student._id)}
-                            className="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600"
+                            className="bg-red-500 hover:cursor-pointer text-white px-3 py-1 rounded hover:bg-red-600"
                           >
                             Delete
                           </button>
@@ -266,13 +266,13 @@ const Student = () => {
                 <button
                   type="button"
                   onClick={() => setShowForm(false)}
-                  className="px-4 py-2 rounded-md bg-gray-300 hover:bg-gray-400"
+                  className="px-4 py-2 hover:cursor-pointer rounded-md bg-gray-300 hover:bg-gray-400"
                 >
                   Cancel
                 </button>
                 <button
                   type="submit"
-                  className="px-4 py-2 rounded-md bg-green-600 text-white hover:bg-green-700 flex items-center gap-2"
+                  className="px-4 py-2 hover:cursor-pointer rounded-md bg-green-600 text-white hover:bg-green-700 flex items-center gap-2"
                   disabled={formSubmitting}
                 >
                   {formSubmitting ? (
